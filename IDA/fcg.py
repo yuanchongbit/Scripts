@@ -1,5 +1,7 @@
 from idaapi import *
 from idautils import XrefsFrom
+import ida_nalt
+
 
 def fcg2dot(save_path, title):
 	f = open(save_path, 'w')
@@ -17,12 +19,14 @@ def fcg2dot(save_path, title):
 	funcs = Functions()
 	for func in funcs:
 		fname = GetFunctionName(func)
-		func_size = calc_func_size(get_func(func))
+		# func_size = calc_func_size(get_func(func))
+		func_size = len(list(FuncItems(func)))
 		dic[fname] = node_index
 		f.write(f"\"{node_index}\" [ label = \"{fname}\", size = {func_size}, attr = \"intrinsic\"];\n")
 		node_index += 1
 
 	# enumerate extern functions
+	nimps = ida_nalt.get_import_module_qty()
 	dic_imp_addr = {} # store map of import function addr and name
 	for i in range(nimps):
 	    name = ida_nalt.get_import_module_name(i)
