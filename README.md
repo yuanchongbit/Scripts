@@ -1,2 +1,2 @@
 # Scripts
-Here is some scripts I wrote or I collected. 
+Here are some scripts I wrote or I collected. 
