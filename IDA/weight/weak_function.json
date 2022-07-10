@@ -1,0 +1,80 @@
+{    
+    "weak_string_copy_functions" : [
+        "strcpy", "strcpyA", "strcpyW", "wcscpy", "_tcscpy", "_mbscpy", "StrCpy", "StrCpyA",
+        "StrCpyW", "lstrcpy", "lstrcpyA", "lstrcpyW", "_tccpy", "_mbccpy", "_ftcscpy", 
+        "strncpy", "wcsncpy", "_tcsncpy", "_mbsncpy", "_mbsnbcpy", "StrCpyN", "StrCpyNA", 
+        "StrCpyNW", "StrNCpy", "strcpynA", "StrNCpyA", "StrNCpyW", "lstrcpyn", "lstrcpynA", "lstrcpynW",
+
+        "strncpy", "wcsncpy", "_tcsncpy", "_mbsncpy", "_mbsnbcpy", "StrCpyN", "StrCpyNA", "StrCpyNW", 
+        "StrNCpy", "strcpynA", "StrNCpyA", "StrNCpyW", "lstrcpyn", "lstrcpynA", "lstrcpynW", "_fstrncpy"
+    ],
+
+    "weak_string_concatenation_functions" : [
+        "strcat", "strcatA", "strcatW", "wcscat", "_tcscat", "_mbscat", "StrCat", "StrCatA",
+        "StrCatW", "lstrcat", "lstrcatA", "lstrcatW", "StrCatBuff", "StrCatBuffA", "StrCatBuffW",
+        "StrCatChainW", "_tccat", "_mbccat", "_ftcscat", "strncat", "wcsncat", "_tcsncat", 
+        "_mbsncat", "_mbsnbcat", "StrCatN", "StrCatNA", "StrCatNW", "StrNCat", "StrNCatA", 
+        "StrNCatW", "lstrncat", "lstrcatnA", "lstrcatnW", "lstrcatn",
+
+        "strncat", "wcsncat", "_tcsncat", "_mbsncat", "_mbsnbcat", "StrCatN", "StrCatNA", 
+        "StrCatNW", "StrNCat", "StrNCatA", "StrNCatW", "lstrncat", "lstrcatnA", "lstrcatnW", 
+        "lstrcatn", "_fstrncat"
+    ],
+
+    "weak_sprintf_functions" : [
+        "sprintfW", "sprintfA", "wsprintf", "wsprintfW", "wsprintfA", "sprintf", "swprintf",
+        "_stprintf", "wvsprintf", "wvsprintfA", "wvsprintfW", "vsprintf", "_vstprintf", "vswprintf",
+        "wnsprintf", "wnsprintfA", "wnsprintfW", "_snwprintf", "snprintf", "sntprintf _vsnprintf", 
+        "vsnprintf", "_vsnwprintf", "_vsntprintf", "wvnsprintf", "wvnsprintfA", "wvnsprintfW",
+
+        "_snwprintf", "_snprintf", "_sntprintf", "nsprintf",
+        "wvsprintfA", "wvsprintfW", "vsprintf", "_vstprintf", "vswprintf",
+        "_vsnprintf", "_vsnwprintf", "_vsntprintf", "wvnsprintf", "wvnsprintfA", "wvnsprintfW"
+    ],
+
+    "weak_string_tokenizing_functions" : [
+        "strtok", "_tcstok", "wcstok", "_mbstok"
+    ],
+
+    "Makepath functions" : [
+        "makepath", "_tmakepath", "_makepath", "_wmakepath"
+    ],
+
+    "Splitpath functions" : [
+        "_splitpath", "_tsplitpath", "_wsplitpath"
+    ],
+
+    "scanf functions" : [
+        "scanf", "wscanf", "_tscanf", "sscanf", "swscanf", "_stscanf",
+
+        "snscanf", "snwscanf", "_sntscanf"
+    ],
+
+    "numeric conversion functions" : [
+        "_itoa", "_itow", "_i64toa", "_i64tow", "_ui64toa", "_ui64tot", "_ui64tow", "_ultoa", "_ultot", "_ultow"
+    ],
+
+    "gets functions" : [
+        "gets", "_getts", "_gettws"
+    ],
+
+    "OEM conversion functions" : [
+        "CharToOem", "CharToOemA", "CharToOemW", "OemToChar", "OemToCharA", "OemToCharW", "CharToOemBuffA", "CharToOemBuffW"
+    ],
+
+    "stack dynamic memory allocation functions" : [
+        "alloca", "_alloca"
+    ],
+
+    "string length functions" : [
+        "strlen", "wcslen", "_mbslen", "_mbstrlen", "StrLen", "lstrlen"
+    ],
+
+    "memory copy functions" : [
+        "memcpy", "RtlCopyMemory", "CopyMemory", "wmemcpy"
+    ],
+
+    "other functions" : [
+        "puts", "realloc"
+    ]
+}
